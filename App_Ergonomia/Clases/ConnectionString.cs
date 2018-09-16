@@ -12,6 +12,7 @@ namespace App_Ergonomia.Clases
 
         public static string GetConnection()
         {
+            //
             connectionText = "Data Source = siqueiros.database.windows.net ; Initial Catalog = SECETMA ; User id= msiqueiros;Password = QAZblitz1894?;";
             return connectionText;
         }
