@@ -76,22 +76,16 @@
                             <Label Name="CounterLabel" Margin="15,0,-5,20">Pregunta 1</Label>
                             <Label  >de 19</Label>
                             <ProgressBar  Name="TestProgressBar" Value="0" Margin="10,0,10,10"></ProgressBar>
-
                         </DockPanel>
                         <DockPanel>
                             <Button Style="{DynamicResource MaterialDesignRaisedLightButton}" HorizontalAlignment="Left" Width="100" Margin="15,-5,0,10" Height="25" Foreground="White" BorderThickness="0"  Content="Atras" Click="Button_Click_1"/>
                             <Button HorizontalAlignment="Left" Width="100" Margin="15,-5,0,10" Height="25" Foreground="White" BorderThickness="0"  Content="Siguente" Click="Button_Click"/>
-                            
-                                
-                               
-
                         </DockPanel>
                     </StackPanel>
                 </materialDesign:Card>
                 </StackPanel>
         </Grid>
     </Grid>
-
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
