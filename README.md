@@ -1,0 +1,1 @@
+Applicación de wpf para la evaluación ergonómica de los espacios de trabajo en el área manufactura.
