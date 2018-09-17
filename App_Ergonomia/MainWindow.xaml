@@ -12,7 +12,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="SECETMA" Height="1080" Width="1920" Opacity="0.95" WindowState="Maximized" >
+        Title="SECETMA" Height="1080" Width="1920" Opacity="0.95" WindowState="Maximized" Loaded="Window_Loaded" >
     <Grid Opacity="0.95">
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,.25" EndPoint="0.5,0">
@@ -32,37 +32,9 @@
         </Grid.ColumnDefinitions>
 
         <Border CornerRadius="8,8,8,8" BorderBrush="white" BorderThickness="10" Grid.Row="1" Grid.Column="1" >
-            <StackPanel   Margin="-1" Background="White"   >
-                <TextBlock Margin="0,20,0,10" Text="Bienvenido!" HorizontalAlignment="Center" FontSize="25">
-                    
-                </TextBlock>
-                <Image Source="Images/desk.png" Width="200" Height="200" ></Image>
-                <DockPanel Width="200">
-                    <materialDesign:PackIcon VerticalAlignment="Bottom" Margin="0,0,0,4" Kind="Account" />
-                    <TextBox Name="UserName" materialDesign:HintAssist.Hint="Usuario"  materialDesign:HintAssist.IsFloating="True"/>
-                </DockPanel>
-                <DockPanel Width="200">
-                    <materialDesign:PackIcon VerticalAlignment="Bottom" Margin="0,0,0,4" Kind="Lock" />
-                    <PasswordBox Name="Password" materialDesign:HintAssist.Hint="Contraseña"  materialDesign:HintAssist.IsFloating="True"/>
-                </DockPanel>
-                <DockPanel HorizontalAlignment="Center">
-                    <CheckBox Content="Recordar Contraseña"  Margin="0,10,60,10" />
-                </DockPanel>
-                
-                <Button FontSize="18" Margin="0,5,0,10" Content="Login" Click="LoginButton_Click" Width="200"   Foreground="White"  BorderThickness="0" FontWeight="Bold"></Button>
-                <materialDesign:Card Width="300" HorizontalAlignment="Center" Margin="0,10,0,10" Padding="15" materialDesign:ShadowAssist.ShadowDepth="Depth4">
-                    <DockPanel>
-                        <TextBlock>
-                            <Hyperlink Foreground="Gray">Olvidaste la contraseña?</Hyperlink> 
-                        </TextBlock>
-                        <TextBlock HorizontalAlignment="Right">
-                             <Hyperlink  Foreground="Gray">Registrarse</Hyperlink>
-                        </TextBlock>
-                    </DockPanel>
-                </materialDesign:Card>
-
-
-            </StackPanel>
+            
+                <Frame Name="indexFrame" NavigationUIVisibility="Hidden" />
+           
         </Border>
     </Grid>
     <Window.Resources>

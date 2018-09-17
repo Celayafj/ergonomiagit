@@ -27,16 +27,12 @@ namespace App_Ergonomia
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            if (DB.Login(UserName.Text, Password.Password))
-            {
-                Index window = new Index();
-                Hide();
-                window.Show();
-            }
-            else
-            {
-                MessageBox.Show("Login failed");
-            }
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            indexFrame.Content = new LoginPage();
         }
     }
 }

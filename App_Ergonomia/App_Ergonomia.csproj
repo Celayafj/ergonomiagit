@@ -60,6 +60,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\RecoverPassword.xaml.cs">
       <DependentUpon>RecoverPassword.xaml</DependentUpon>
     </Compile>
@@ -70,7 +73,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Login.xaml">
+    <Page Include="LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -87,9 +90,6 @@
     <Compile Include="Clases\DB.cs" />
     <Compile Include="Index.xaml.cs">
       <DependentUpon>Index.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\Login.xaml.cs">
-      <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -129,6 +129,15 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Resource Include="Images\desk.png" />
+    <Resource Include="Pages\Images\chart.png" />
+    <Resource Include="Pages\Images\config.png" />
+    <Resource Include="Pages\Images\desk.png" />
+    <Resource Include="Pages\Images\ergonomia.png" />
+    <Resource Include="Pages\Images\home.png" />
+    <Resource Include="Pages\Images\logout.png" />
+    <Resource Include="Pages\Images\menu.png" />
+    <Resource Include="Pages\Images\users.png" />
+    <Resource Include="Pages\Images\workspace.png" />
     <Content Include="Questions\ergonomia.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
